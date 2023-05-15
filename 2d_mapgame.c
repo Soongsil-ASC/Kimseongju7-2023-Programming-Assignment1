@@ -241,3 +241,4 @@ void print_cheat_map(struct location map[SIZE][SIZE]) {
     printf(" -----------------\n");
 }
 
+# Kimseongju7-2023-Programming-Assignment1
