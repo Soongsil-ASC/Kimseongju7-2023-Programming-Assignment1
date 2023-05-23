@@ -88,7 +88,7 @@ int main(void) {
     getchar();
     scanf("%c", &command);
 
-    while(command != EOF)
+    while(1)
     {
         if( command == 'c')
         {
@@ -101,7 +101,36 @@ int main(void) {
             printf("Exiting Program!\n");
             exit(0);
         }
+
+		if( command == 'm')
+		{
+			getchar();
+			command = getchar();
+			if(command == 'u')
+			{
+				print_game_play_map(map);
+			}
+
+			else if(command == 'd')
+			{
+				print_game_play_map(map);
+			}
+
+			else if(command == 'l')
+			{
+				print_game_play_map(map);
+			}
+
+			else if(command == 'r')
+			{
+				print_game_play_map(map);
+			}
+
+		}
+
+
         getchar();
+		printf("\nEXPLORE!\n");
         printf("Enter command: ");
         scanf("%c", &command);
     }
@@ -241,4 +270,3 @@ void print_cheat_map(struct location map[SIZE][SIZE]) {
     printf(" -----------------\n");
 }
 
-# Kimseongju7-2023-Programming-Assignment1
